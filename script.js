@@ -7,6 +7,7 @@ var image1=document.getElementById("img1");
                 return new Promise(function(resolve,reject){
                     setTimeout(function(){
                         document.getElementById("header1").style.display="none";
+                                console.log("hi");
                         resolve({'img1src':'images1/cse-department.png'})
                     },1000)
                 })
