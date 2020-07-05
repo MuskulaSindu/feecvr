@@ -9,7 +9,7 @@ var image1=document.getElementById("img1");
                         document.getElementById("header1").style.display="none";
                                 console.log("hi");
                         resolve({'img1src':'images1/cse-department.png'})
-                    },4000)
+                    },6000)
                 })
             }
             var funct2=function(){
@@ -19,7 +19,7 @@ var image1=document.getElementById("img1");
                                  console.log("hi");
                         resolve({'img2src':'images1/ECE.jpg'})
                         //reslove({'img2src':{source}})
-                    },2000)
+                    },3000)
                 })
             }
             var funct3=function(){
@@ -29,7 +29,7 @@ var image1=document.getElementById("img1");
                                  console.log("hi");
                         resolve({'img3src':'images1/EEE.jpg'})
                         //resolve({'img3src':'source'})
-                    },2000)
+                    },3000)
                 })
             }
             async function images(){
