@@ -7,7 +7,7 @@ var image1=document.getElementById("img1");
                 return new Promise(function(resolve,reject){
                     setTimeout(function(){
                         document.getElementById("header1").style.display="none";
-                        resolve({'img1src':'/images1/cse-department.png'})
+                        resolve({'img1src':'images1/cse-department.png'})
                     },1000)
                 })
             }
@@ -15,7 +15,7 @@ var image1=document.getElementById("img1");
                 return new Promise(function(resolve,reject){
                     setTimeout(function(){
                         document.getElementById("header2").style.display="none";
-                        resolve({'img2src':'/images1/ECE.jpg'})
+                        resolve({'img2src':'images1/ECE.jpg'})
                         //reslove({'img2src':{source}})
                     },1000)
                 })
@@ -24,7 +24,7 @@ var image1=document.getElementById("img1");
                 return new Promise(function(resolve,reject){
                     setTimeout(function(){
                         document.getElementById("header3").style.display="none";
-                        resolve({'img3src':'/images1/EEE.jpg'})
+                        resolve({'img3src':'images1/EEE.jpg'})
                         //resolve({'img3src':'source'})
                     },1000)
                 })
