@@ -19,7 +19,7 @@ var image1=document.getElementById("img1");
                                  console.log("hi");
                         resolve({'img2src':'images1/ECE.jpg'})
                         //reslove({'img2src':{source}})
-                    },3000)
+                    },5000)
                 })
             }
             var funct3=function(){
@@ -29,7 +29,7 @@ var image1=document.getElementById("img1");
                                  console.log("hi");
                         resolve({'img3src':'images1/EEE.jpg'})
                         //resolve({'img3src':'source'})
-                    },3000)
+                    },4000)
                 })
             }
             async function images(){
