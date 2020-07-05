@@ -65,14 +65,14 @@
 
     <br />
    
-    <div class="jumbotron">
-        <p class=" h1 " > <img src="images1/cvr.png"  style="height:2px width:2px"><h class="offset-2">CVR College of Engineering</h></p>
+    <div class="jumbotron" style="background-color:cadetblue">
+        <p class=" h1 " > <img src="images1/cvr.png"><h class="offset-2">CVR College of Engineering</h></p>
     </div>
     <br />
 
     <div class="container">
         <div class="row">
-            <ol class="col-12 breadcrumb">
+            <ol class="col-12 breadcrumb bg-dark">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contact Us</li>
             </ol>
@@ -135,6 +135,55 @@
     </div>
     </div>
     </div>
+    <br><br>
+    <h1 style="text-align:center">Send us your feedback</h1>
+    <div class="container">
+        <Form>
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required />
+            </div>
+            <br />
+            <div class="row">
+                <label for="email">E-mail:</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter E-mail" required />
+            </div>
+            <br/>
+            <div class="row">
+                <label for="phone">Phone Number:</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Ph.No" required />
+            </div>
+            <br>
+            <div class="row">
+                
+                <input type="checkbox"/>
+                <div class="col-md-4">
+                <strong>We may contact You ?</strong>
+                </div>
+                <div class="col-md-7">
+               <select>
+                <option>Telnum</option>
+                <option>Email</option>
+            </select>
+            </div>
+        </div>
+        <br >
+        <div class="row">
+            <div class="col-md-1">
+        <label for="message">Message: </label>
+            </div>
+        <textarea rows="10" cols="50"></textarea>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <button type="button" id="button" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+        </Form>
+    </div>
+    <br/>
     <div class="jumbotron bg-dark text-white" style="clear:both;">
         <div class="container">
             <ul>
@@ -162,7 +211,12 @@
             </div>
         </div>
     </div>
-
+    <script>
+        btn=document.getElementById("button");
+        btn.onclick=function(){
+            alert('Feedback has been sent');
+        }
+        </script>
 
 
     <!-- jQuery library -->

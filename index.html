@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* #header1{
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+} */
+#header1,#header2,#header3{
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -65,9 +99,9 @@
 
     <br />
     
-    <br />
+    <br >
     
-        <p class=" h1 jumbotron" > <img src="images1/cvr.png"  style="height:2px width:2px"><h class="offset-2">CVR College of Engineering</h></p>
+        <p class=" h1 jumbotron text-black" style="background-color:cadetblue" > <img src="images1/cvr.png" ><h class="offset-2">CVR College of Engineering</h></p>
     
 
     <div class="carousel " id="bb" data-ride="carousel" data-interval="2000">
@@ -109,42 +143,46 @@
 
     </div>
    
-    <br />
+    
+    <div style="background-color:currentColor">  
+        <br/>   
     <div class="row">
         <div class="col-md-1"></div>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a href="#Notifications" class="nav-link "  data-toggle="tab">Notifications</a>
+            <a href="#Notifications" class="nav-link "  data-toggle="tab"><b>Notifications</b></a>
         </li>
         <li class="nav-item">
-            <a href="#News" class="nav-link"  data-toggle="tab">Latest News</a>
+            <a href="#News" class="nav-link"  data-toggle="tab"><b>Latest News</b></a>
         </li>
     </ul>
         </div>
-
+        
         <div class="row">
             <div class="col-md-1"></div>
     <div class="tab-content">
-        <li class="tab-pane" id="Notifications">FEE Training is started for the Virtusa Recruits
+        <li class="tab-pane" id="Notifications" style="color:white;">FEE Training is started for the Virtusa Recruits
             <br /><br />
             Technical Talk by Jogesh Muppala on MEAN Stack on 25.06.2020</li>
-        <li class="tab-pane" id="News">This tab contains Latest News</li>
+        <li class="tab-pane" id="News" style="color:white;">This tab contains Latest News</li>
     </div>
     </div>
     
     
 
     <br />
+   
     <div class="row">
         <div class="col-md-1"></div>
     <div class="col-md-3">
     <div class="card" style="width:300px;margin : 10px">
-    <div class="card-header">
-        <img src="images1/cse-department.png" class="img-fluid">
+    <div class="card-header h-500">
+        <p id="header1"></p>
+        <img id="img1" style="width: 5000px; height: 200px;" class="img-fluid">
     </div>
     <div class="card-body">
         <h3>CSE Logo</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim doloremque numquam assumenda!</p>
+            <p class="text-muted">Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
     </div>
     <div class="card-footer">
         
@@ -155,11 +193,13 @@
     <div class="col-md-3">
         <div class="card" style="width:300px;margin : 10px">
         <div class="card-header">
-            <img src="images1/cse-department.png" class="img-fluid">
+            <p id="header2"></p>
+            <img id="img2" style="width: 5000px; height: 200px;" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3>CSE Logo</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim doloremque numquam assumenda!</p>
+            <h3>ECE Logo</h3>
+            <p class="text-muted">
+                Electronics and Communication Engineering (ECE) compiles in Communication Engineering and core Electronics Engineering. The course concept is to focus mainly on the communication part with the knowledge of the electronics field.</p>
         </div>
         <div class="card-footer">
             
@@ -170,11 +210,12 @@
         <div class="col-md-3">
             <div class="card" style="width:300px;margin : 10px">
             <div class="card-header">
-                <img src="images1/cse-department.png" class="img-fluid">
+                <p id="header3"></p>
+                <img id="img3" style="width : 5000px; height: 200px;" class="img-fluid">
             </div>
             <div class="card-body">
-                <h3>CSE Logo</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim doloremque numquam assumenda!</p>
+                <h3>EEE Logo</h3>
+                <p class="text-muted">Electrical & Electronics Engineering (EEE), deals with the engineering problems, opportunities and needs of electrical, electronics, computer, telecommunication systems and related industries</p>
             </div>
             <div class="card-footer">
                 
@@ -184,11 +225,10 @@
 
 
         </div>
-
-        <br />
+        </div>
         
 
-        <div class="jumbotron bg-dark text-white" style="clear:both;">
+        <div class="jumbotron bg-dark text-white">
             <div class="container">
                 <ul>
                 <li>
@@ -216,6 +256,62 @@
                 </div>
             </div>
         </div>
+        <script>
+            var image1=document.getElementById("img1");
+            var image2=document.getElementById("img2");
+            var image3=document.getElementById("img3");
+           
+            var funct1=function(){
+              
+                return new Promise(function(resolve,reject){
+                    setTimeout(function(){
+                        document.getElementById("header1").style.display="none";
+                        resolve({'img1src':'/images1/cse-department.png'})
+                    },4000)
+                })
+            }
+            var funct2=function(){
+                return new Promise(function(resolve,reject){
+                    setTimeout(function(){
+                        document.getElementById("header2").style.display="none";
+                        resolve({'img2src':'/images1/ECE.jpg'})
+                        //reslove({'img2src':{source}})
+                    },2000)
+                })
+            }
+            var funct3=function(){
+                return new Promise(function(resolve,reject){
+                    setTimeout(function(){
+                        document.getElementById("header3").style.display="none";
+                        resolve({'img3src':'/images1/EEE.jpg'})
+                        //resolve({'img3src':'source'})
+                    },2000)
+                })
+            }
+            async function images(){
+                var res1=await funct1();
+                image1.src=res1.img1src;
+               // document.getElementsByid("header1").style.display="none";
+                console.log(image1.onload);
+                var res2=await funct2();
+                image2.src=res2.img2src;
+                var res3=await funct3();
+                image3.src=res3.img3src;
+                return image1;
+
+                // var res1=await funct1();
+                // image1.src=res1.img1src;
+                // var res2=await funct2(res1.img1src);
+                // image2.src=res1.img1src;
+                // var res3=await funct3(res2.img2src);
+                // image3.src=res1.img1src;
+
+            }
+            images();
+          
+
+
+        </script>
     
 
    
